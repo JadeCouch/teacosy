@@ -1,4 +1,4 @@
-html, body {
+body {
   color: seashell;
   background-color: black;
   opacity: 0.9;
@@ -61,25 +61,48 @@ a {
 }
 
 #featured {
-  justify-content: center;
-  width: 1000px;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
 }
 
 .featured-tea {
   display: flex;
-  flex-direction: wrap row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.berry-blitz img,
-.spiced-rum img,
-.donuts img,
-.myrtle-ave img,
-.bedford-bizarre img {
+.featured-tea img {
   height: 200px;
   width: 300px;
+  margin: 10px;
 }
 
 
 #locations {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-image: url("../images/locations-background.jpg");
+  height: 500px;
+  width: 1200px;
+}
 
+.location-blocks {
+
+}
+
+.downtown,
+.east-bayside,
+.oakdale {
+  background-color: black;
+  width: 300px;
+  padding-left: 40px;
+  padding-left: 40px;
+
+}
+
+.contact {
+  height: 200px;
+  text-align: center;
 }
